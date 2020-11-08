@@ -11,7 +11,8 @@ export const animals = [
         url: 'https://unsplash.com/photos/8wTPqxlnKM4',
         width: '350',
         height: '210',
-        path: './images/237-puppy.jpg'
+        
+         path: './images/237-puppy.jpg'
     },
     {
         id: 433,
