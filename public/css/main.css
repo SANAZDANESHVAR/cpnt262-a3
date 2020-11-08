@@ -1,0 +1,74 @@
+
+.header{
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ background-color:black ;
+ color:whitesmoke;
+ font-size: 15px;
+ padding:3em;
+ margin-bottom:2em;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin :auto;
+  gap: 0.7em;
+  /* in order to  be responsive   */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
+
+  /* to make a limitatin on the maximum width */
+  max-width: 1800px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    /* card width and height, 350px is taken since the cats' image has the max width which is 350px*/
+    max-width: 350PX;
+    min-width: 350PX;
+    min-height: 100%;
+    border: 3px solid black; 
+    border-radius: 1em;
+    font-size:  12px;
+   justify-content: center;
+    text-align: center;
+}
+
+
+img {
+ align-self: center;
+ /* in order to have  full width of images */  
+ min-width: 100%;
+   /* in order to have equal images' height in the each card */  
+ min-height: 300px;
+ max-height: 300px;
+ /* to preserve  aspect ratio  of each image*/
+  object-fit: cover;
+ 
+}
+
+.figcaption {
+ font-size:  12px;
+ justify-content: center;
+ text-align: center;
+}
+
+/* resets */
+* {
+  box-sizing: border-box;
+ font-family: 'Roboto Slab', serif;
+}
+
+
+.Footer {
+  display: flex;
+  margin:0;
+ justify-content: center;
+ text-align: center;
+ background-color:black;  
+ color:whitesmoke;
+ font-size: 15px;
+}
